@@ -1,0 +1,517 @@
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+    /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-image: url(../images/Vector_Smart_Object.png);
+    background-repeat: no-repeat;
+    background-color: rgb(26, 25, 21);
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.log_in, .sign_up {
+    width: 94px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: none;
+    outline: none;
+    background-color: rgba(26, 25, 21, 0);
+    cursor: pointer;    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.sign_up:hover {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);
+}
+
+
+.log_in:hover {
+    width: 94px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);
+}
+
+
+.authorization_btn_wrapper {
+    width: 192px;
+    margin: 0 auto;
+    padding-bottom: 118px;
+}
+
+
+.logo {
+    display: block;
+    width: 185px; 
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;   
+    padding-bottom: 34px;
+}
+
+
+.nav_title {
+    Font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+}
+
+
+.nav_title_description {
+    width: 220px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    padding-bottom: 18px;
+}
+
+
+.find_partner-btn {
+    display: block;
+    width: 226px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    cursor: pointer;
+    margin: 0 auto;
+    outline: none;
+    ont-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+    
+
+.holiday_dreams {
+    padding-bottom: 138px;
+}
+
+
+
+/* PARTNER_FOR_HOLIDAY */
+
+.partner_for_holiday {
+    padding-top: 75px;
+    padding-bottom: 58px;
+}
+
+
+.section_partner_for_holiday_title {
+    Font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+}
+
+
+.partners_list {
+    margin: 0 auto;
+}
+
+
+.partners_list-item {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+.breadley_hunter-photo {
+    position: relative;
+}
+
+
+.breadley_hunter-photo::after  {
+    content: "";
+    background-image: url(../images/icons/TV.png);
+    background-color: rgba(255, 78, 80);
+    isplay: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 37px;
+    height: 37px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: 43px;
+}
+
+
+.lucas_marsha-photo {
+    position: relative;
+}
+
+
+.lucas_marsha-photo::after {
+    display: block;
+    content: "";
+    background-image: url(../images/icons/chemistry.png);
+    background-color: rgb(255, 165, 7);
+    isplay: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 37px;
+    height: 37px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: 43px;
+}
+
+
+.heather_walker-photo {
+    position: relative;
+}
+
+
+.heather_walker-photo::after {
+    display: block;
+    content: "";
+    background-image: url(../images/icons/coffy.png);
+    background-color: rgb(28, 215, 173);
+    isplay: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 37px;
+    height: 37px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: 43px;
+}
+
+
+.bradley_hunter_girl-photo {
+    position: relative;
+}
+
+
+.bradley_hunter_girl-photo::after {
+    display: block;
+    content: "";
+    background-image: url(../images/icons/massege.png);
+    background-color: rgb(78, 115, 219);
+    isplay: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 37px;
+    height: 37px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    position: absolute;
+    position: absolute;
+    bottom: -5px;
+    right: 43px;
+} 
+
+
+.partner_photo {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+
+.partner_name {
+    Font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.partner_about {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+
+
+.see_other_partners-btn {
+    display: block;
+    width: 280px;
+    height: 44px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(255, 78, 80);
+    color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    outline: none; 
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+
+/* MEDIA 768px */
+
+@media (min-width: 768px) {
+    .container {
+        width: 670px;
+    }
+
+    .header {
+        background-image: url(../images/Vector_Smart_Object_tablet-2.png);
+    }
+
+
+    .site_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 47px;
+        padding-bottom: 156px;
+        flex-direction: row-reverse
+    }
+
+
+    .logo {
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+
+    .authorization_btn_wrapper {
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+
+    .nav_title {
+        width: 504px;
+        font-size: 52px;
+        line-height: 62px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+
+
+    .nav_title_description {
+        font-size: 24px;
+        line-height: 28px;
+        width: auto;
+        padding-bottom: 36px;
+    }
+
+
+    .partners_list {
+        width: 470px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .heather_walker {
+        order: 1;
+    }
+
+
+    .lucas_marsha {
+        order: 2;
+    }
+
+
+    .bradley_hunter-girl {
+        order: 3;
+    }
+
+
+    .holiday_dreams {
+    padding-bottom: 234px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 959px) {
+.partners_list-item:nth-child(odd) {
+        margin-bottom: 60px;
+    }
+
+    .partners_list-item:nth-child(even) {
+        margin-bottom: 38px;
+    }
+}
+
+
+@media (min-width: 960px) {
+    .container {
+        width: 944px;
+    }
+
+
+    .header {
+        background-image: url(../images/Vector_Smar_Object-desctop.jpg);
+    }
+
+
+    .partners_list {
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+   
+
+
+
+
+
+
+
